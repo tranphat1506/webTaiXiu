@@ -257,11 +257,15 @@ let startCounter = (timer)=>{
             waitResultTimeOver = false;
             betTimeOver = true;
         }
+        
         if (!waitResultTimeOver){
             xiuBet += randomMoneyAdd()
             taiBet += randomMoneyAdd()
             document.querySelector(".result-display").textContent = timer;
             document.querySelector(".bet__display .time").textContent = `Đặt cược`;
+            if (timer <= 3){
+                isSubmit = true;
+            }
         }
         else{
             document.querySelector(".bet__display .time").textContent = `Chờ ${timer}s`;
