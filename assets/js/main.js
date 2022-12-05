@@ -183,12 +183,13 @@ const btnSubmit = {
     submit : function (e){
         e.preventDefault()
         if (!isSubmit){
-            isSubmit = true;
             if (chooseTai && money){
+                isSubmit = true;
                 userMoney-=money;
                 taiBet += money;
                 document.querySelector(".xiu__display .bet-btn").style.visibility = "hidden"
             }else if (chooseXiu && money){
+                isSubmit = true;
                 userMoney-=money;
                 xiuBet += money;
                 document.querySelector(".tai__display .bet-btn").style.visibility = "hidden"
