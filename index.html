@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="time"></div>
+    <div class="total-bet"></div>
+    <div class="display-bet"></div>
+    <div id="game" class="--flex-cl">
+        <div class="taixiu-container --in-middle --flex-cl">
+            <div class="display-container inner-container --flex-center">
+                <div class="tai__display display">
+                    <div class="title tai">Tài</div>
+                    <div class="bet-total tai-bet">0đ</div>
+                    <div class="my-bet box">0đ</div>
+                    <button class="bet-btn box" onclick="btnTai()">Đặt cược</button>
+                </div>
+                <div class="bet__display display">
+                    <div class="title time">Chờ</div>
+                    <div class="result-display --time --flex-center">0</div>
+                </div>
+                <div class="xiu__display display">
+                    <div class="title xiu">Xỉu</div>
+                    <div class="bet-total xiu-bet">0đ</div>
+                    <div class="my-bet box">0đ</div>
+                    <button class="bet-btn box" onclick="btnXiu()">Đặt cược</button>
+                </div>
+            </div>
+            <div class="history-container inner-container">
+            </div>
+            <div class="bet-container inner-container">
+                <button class="box-bet --1k" value="1000">1K</button>
+                <button class="box-bet --10k" value="10000">10K</button>
+                <button class="box-bet --50k" value="50000">50K</button>
+                <button class="box-bet --100k" value="100000">100K</button>
+                <button class="box-bet --500k" value="500000">500K</button>
+                <button class="box-bet --1m" value="1000000">1M</button>
+                <button class="box-bet --5m" value="5000000">5M</button>
+                <button class="box-bet --10m" value="10000000">10M</button>
+                <button class="box-bet --50m" value="50000000">50M</button>
+            </div>
+        </div>
+        <div class="submit-bet">
+            <div class="box all submit-btn">
+                ALL IN
+            </div>
+            <div class="box submit submit-btn">
+                Đặt cược
+            </div>
+            <div class="box cancel submit-btn">
+                Hủy
+            </div>
+        </div>
+    </div>
+    <div id="user" class="--flex-row user--hidden">
+        <div class="exit user__info-container">
+            <button class="box exit-btn" onclick="exitBtn()">Thoát</button>
+        </div>
+        <div class="user__avatar-container user__box">
+            <img src="./assets/img/default_avt.jpg" alt="USER_AVATAR" class="avt">
+        </div>
+        <div class="user__info-container user__box --flex-cl">
+            <div class="info info--name">
+            </div>
+            <div class="info info--money-display">
+                0đ
+            </div>
+        </div>
+        <div class ="admin-tool user__info-container">
+            <button class="box plus-money" onclick="plusMoney()">Thêm tiền</button>
+        </div>
+    </div>
+    <script src="./assets/js/md5.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
